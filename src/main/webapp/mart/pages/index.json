@@ -1,0 +1,138 @@
+{
+    "code": "1",
+    "data":{
+        "mapping":[
+            {"name": "mart.main.searchbar", "option": {
+                "name": "search",
+                "url": "search",
+                "inputName": "query",
+                "parameter": {},
+                "placeholder": "搜索"
+            }},
+            {"name": "mart.main.pictab", "option": {
+                "name": "pictab",
+                "tabs": [
+                    {"pic": "data/images/a.png", "url": ""},
+                    {"pic": "data/images/a.png", "url": ""},
+                    {"pic": "data/images/a.png", "url": ""},
+                    {"pic": "data/images/a.png", "url": ""}
+                ],
+                "override": {
+                    "event_aa": "function () {console.log(\"--------------->>>\");}"
+                }
+            }},
+            {"name": "mart.main.iconmapping", "option": {
+                "name": "iconmapping",
+                "mapping": [
+                    {"name": "商品类目", "icon":  "assets/packets/mart/style/images/icons/icon-11.png", "url": "", "title": ""},
+                    {"name": "购物车", "icon":  "assets/packets/mart/style/images/icons/icon-12.png", "url": "", "title": ""},
+                    {"name": "我的牧元", "icon":  "assets/packets/mart/style/images/icons/icon-13.png", "url": "", "title": ""},
+                    {"name": "充值", "icon":  "assets/packets/mart/style/images/icons/icon-14.png", "url": "", "title": ""},
+                    {"name": "热卖推荐", "icon":  "assets/packets/mart/style/images/icons/icon-15.png", "url": "", "title": ""},
+                    {"name": "精选商品", "icon":  "assets/packets/mart/style/images/icons/icon-16.png", "url": "", "title": ""},
+                    {"name": "我的牧元", "icon":  "assets/packets/mart/style/images/icons/icon-17.png", "url": "", "title": ""},
+                    {"name": "充值", "icon":  "assets/packets/mart/style/images/icons/icon-18.png", "url": "", "title": ""}
+                ]
+            }},
+            {"name": "mart.main.wrapline", "option": {
+                "name": "wrapline",
+                "title": "今日特卖"
+            }},
+            {"name": "mart.main.temai", "option": ""},
+            {"name": "mart.main.goodsboard", "option": {
+                "name": "goodsboardone",
+                "goods": [
+                    {"img":  "mart/images/boardone-1.png", "url": ""},
+                    {"img":  "mart/images/boardone-2.png", "url": ""},
+                    {"img":  "mart/images/boardone-3.png", "url": ""},
+                    {"img":  "mart/images/boardone-4.png", "url": ""}
+                ]
+            }},
+            {"name": "mart.main.wrapline", "option": {
+                "name": "zhuti",
+                "title": "主题分类"
+            }},
+            {"name": "mart.main.iconmapping", "option": {
+                "name": "iconmapping2",
+                "mapping": [
+                    {"name": "牛肉", "icon":  "assets/packets/mart/style/images/icons/icon-21.png", "url": "", "title": ""},
+                    {"name": "羊肉", "icon":  "assets/packets/mart/style/images/icons/icon-22.png", "url": "", "title": ""},
+                    {"name": "肉干", "icon":  "assets/packets/mart/style/images/icons/icon-23.png", "url": "", "title": ""},
+                    {"name": "奶酪", "icon":  "assets/packets/mart/style/images/icons/icon-24.png", "url": "", "title": ""},
+                    {"name": "奶茶", "icon":  "assets/packets/mart/style/images/icons/icon-25.png", "url": "", "title": ""},
+                    {"name": "马奶酒", "icon":  "assets/packets/mart/style/images/icons/icon-26.png", "url": "", "title": ""},
+                    {"name": "旅游", "icon":  "assets/packets/mart/style/images/icons/icon-27.png", "url": "", "title": ""},
+                    {"name": "其他", "icon":  "assets/packets/mart/style/images/icons/icon-28.png", "url": "", "title": ""}
+                ]
+            }},
+            {"name": "mart.main.wraptitle", "option": {
+                "name": "wraptitle",
+                "title": "<i class=\"fa fa-coffee\"></i> 猜你喜欢"
+            }},
+            {"name": "mart.main.goodsboard2", "option": {
+                "name": "goodsboard2",
+                "goods": [
+                    {"img":  "mart/images/goods2-1.png", "url": ""},
+                    {"img":  "mart/images/goods2-2.png", "url": ""},
+                    {"img":  "mart/images/goods2-3.png", "url": ""}
+                ]
+            }},
+            {"name": "mart.main.sortmapping", "option": {
+                "name": "sortmapping",
+                "mapping": [
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""}
+                ]
+            }},
+            {"name": "mart.main.wraptitle", "option": {
+                "name": "wraptitle",
+                "title": "<i class=\"fa fa-coffee\"></i> 猜你喜欢"
+            }},
+            {"name": "mart.main.goodsboard2", "option": {
+                "name": "goodsboard2",
+                "goods": [
+                    {"img":  "mart/images/goods2-1.png", "url": ""},
+                    {"img":  "mart/images/goods2-2.png", "url": ""},
+                    {"img":  "mart/images/goods2-3.png", "url": ""}
+                ]
+            }},
+            {"name": "mart.main.sortmapping", "option": {
+                "name": "sortmapping",
+                "mapping": [
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""},
+                    {"name": "牛肉", "url": ""}
+                ]
+            }},
+            {"name": "mart.main.wraptitle", "option": {
+                "name": "wraptitle",
+                "title": "<i class=\"fa fa-coffee\"></i> 猜你喜欢"
+            }},
+            {"name": "mart.main.datalist-twocol", "option": ""},
+            {"name": "mart.main.bottombar", "option": {
+                "name": "bottombar",
+                "btns": [
+                    {"name": "首页", "title": "首页", "icon": "fa fa-home", "url": "index"},
+                    {"name": "推荐", "title": "推荐", "icon": "fa fa-tags", "url": "market/tuijian"},
+                    {"name": "购物车", "title": "购物车", "icon": "fa fa-shopping-cart", "url": "shoppingcar"},
+                    {"name": "我的牧元", "title": "我的牧元", "icon": "fa fa-user", "url": "user"}
+                ]
+            }}
+        ]
+    }
+}

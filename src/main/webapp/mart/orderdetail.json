@@ -1,0 +1,25 @@
+{
+    "code": "1",
+    "data":{
+        "orderNo":"2323555",
+        "orderMoney":200,
+        "freight":20,
+        "orderDate":"2010-07-08 12:30:20",
+        "goods":[
+            {"img":"mart/images/5.jpg","desc":"支付货运或全部或部分使用船只","id":""},
+            {"img":"mart/images/5.jpg","desc":"支付货运或全部或部分使用船只","id":""},
+            {"img":"mart/images/5.jpg","desc":"支付货运或全部或部分使用船只","id":""}
+        ],
+        "user":"李女士 13333333333",
+        "address":"支付货运或全部或部分使用船只",
+        "paytype":"在线支付",
+        "expresstype":"普通快递",
+        "expresstime":"现货，今日完成订单，预计明日(7月10日)到达",
+        "expressdate":"工作日，节假日都可送",
+        "integral":500,
+        "favourable":2,
+        "invoicetype":"纸质",
+        "invoiceowner":"个人",
+        "invoicedesc":"非图书-明细"
+    }
+}

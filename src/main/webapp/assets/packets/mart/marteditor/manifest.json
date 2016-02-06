@@ -1,0 +1,54 @@
+{
+    "code": "1",
+    "data": {
+        "mart.main.pictab":{
+            "name":"pictab",
+            "mapping":[{"type":"mart.form.extendform","label":"tabs","name":"tabs","fields": [
+                {"type": "mart.form.imageupload","require": true,"label": "pic","name":"pic"},
+                {"type": "mart.form.text","require": true,"label": "url","name":"url"}
+            ]}
+        ]},
+        "mart.main.btntab":{
+            "name":"btntab",
+            "mapping":[{"type":"mart.form.extendform","label":"tabs","name":"tabs","fields": [
+                {"type": "mart.form.text","require": true,"label": "pic","name":"pic"},
+                {"type": "mart.form.text","require": true,"label": "url","name":"url"}
+            ]}
+        ]},
+        "mart.main.bottombar":{
+            "name":"bottombar",
+            "mapping":[{"type":"mart.form.extendform","label":"btns","name":"btns","fields": [
+                {"type": "mart.form.text","require": true,"label": "name","name": "name"},
+                {"type": "mart.form.text","require": true,"label": "icon","name":"icon"},
+                {"type": "mart.form.text","require": true,"label": "url","name":"url"},
+                {"type": "mart.form.text","require": true,"label": "title","name":"title"}
+            ]}
+        ]},
+        "mart.main.topbar":{
+            "name":"topbar",
+            "mapping":[
+                {"type": "mart.form.text","require": true,"name":"","label": "title","pic": ""},
+                {"type":"mart.form.extendform","label":"leftbtns","name":"","fields": [
+                    {"type": "mart.form.text","require": true,"label": "pic","name":"pic"},
+                    {"type": "mart.form.text","require": true,"label": "url","name":"url"}
+                ]},
+                {"type":"mart.form.extendform","label":"rightbtns","name":"","fields": [
+                    {"type": "mart.form.text","require": true,"label": "pic","name":"pic"},
+                    {"type": "mart.form.text","require": true,"label": "url","name":"url"}
+                ]}
+        ]},
+        "mart.main.statictopbar":{
+            "name":"statictopbar",
+            "mapping":[
+                {"type": "mart.form.text","require": true,"label": "title","name":"","pic": ""},
+                {"type":"mart.form.extendform","label":"leftbtns","name":"","fields": [
+                    {"type": "mart.form.text","require": true,"label": "pic","name":"pic"},
+                    {"type": "mart.form.text","require": true,"label": "url","name":"url"}
+                ]},
+                {"type":"mart.form.extendform","label":"rightbtns","name":"","fields": [
+                    {"type": "mart.form.text","require": true,"label": "pic","name":"pic"},
+                    {"type": "mart.form.text","require": true,"label": "url","name":"url"}
+                ]}
+        ]}
+    }
+}

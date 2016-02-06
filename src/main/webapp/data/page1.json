@@ -1,0 +1,39 @@
+{
+    "code": "1",
+    "data":{
+        "code":"00000000000000000000000000000000",
+        "tasktime":50,
+        "postsite":"录入岗",
+        "postpeople":"A00201",
+        "posterror":"切片无法识别",
+        "name":"贷款信息维护",
+        "people":"A001",
+        "site":"南宁分行",
+        "time":"20140623 23:23:23",
+        "money":"2,300.20",
+        "deal":"还有1种复杂数据类型——Object，Object本质上是由一组无序的名值对组成的",
+        "autor":{
+            "a1":"aaa",
+            "a2":"aaa",
+            "a3":"aaa",
+            "a4":"aaa"
+        },
+        "detail":[
+            {
+                "name1":"xxx",
+                "name2":"xxx",
+                "index":"1"
+            },
+            {
+                "name1":"eeeee",
+                "name2":"dsdsd",
+                "index":"2"
+            },
+            {
+                "name1":"dsfsdf",
+                "name2":"eeee",
+                "index":"3"
+            }
+        ]
+    }
+}

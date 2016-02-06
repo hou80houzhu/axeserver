@@ -1,0 +1,93 @@
+{
+    "code": "1",
+    "msg": "",
+    "data": [
+        {"id":"0","name": "HOME", "img": "fa fa-home", "view": "brooder.view.main.quickmenu","option":"option.test.quickmenu", "list": []},
+        {"id":"1","name": "test", "img": "fa fa-users", "view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"2","name": "test1", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"3","name": "test2", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.tablegroup","option":"option.test.table", "list": []},
+            {"id":"4","name": "test3", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"5","name": "test4", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.tablegroup","option":"option.test.table", "list": []},
+            {"id":"6","name": "test5", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"7","name": "test6", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.tablegroup","option":"option.test.table", "list": []}
+        ]},
+        {"id":"8","name": "test2", "img": "fa fa-asterisk", "view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"9","name": "test7", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"10","name": "test8", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"11","name": "test9", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"12","name": "test10", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"13","name": "test11", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"14","name": "感统评测管理", "img": "fa fa-briefcase", "view": "brooder.view.main.maincontainer", "option":"", "list": [
+            {"id":"15","name": "T分转换规则管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"16","name": "评测结果管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"17","name": "评测统计", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"18","name": "课程管理", "img": "fa fa-cloud-upload", "view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"19","name": "训练课信息管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"20","name": "个训课程管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"21","name": "课件信息管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"22","name": "题源信息管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"23","name": "网上学习管理", "img": "fa fa-cogs","view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"24","name": "周教案模板管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"25","name": "学习计划模板管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"26","name": "学习计划查看", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"27","name": "个人学习计划管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"28","name": "数据管理", "img": "fa fa-download","view": "brooder.view.main.maincontainer", "option":"", "list": [
+            {"id":"29","name": "会员管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"30","name": "儿童管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"31","name": "关注管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"32","name": "预约管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"33","name": "积分管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"34","name": "订单管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"35","name": "浏览记录", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"36","name": "系统消息", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"37","name": "反馈管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}	
+        ]},
+        {"id":"1","name": "test", "img": "fa fa-users", "view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"2","name": "test1", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"3","name": "test2", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.tablegroup","option":"option.test.table", "list": []},
+            {"id":"4","name": "test3", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"5","name": "test4", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.tablegroup","option":"option.test.table", "list": []},
+            {"id":"6","name": "test5", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"7","name": "test6", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.tablegroup","option":"option.test.table", "list": []}
+        ]},
+        {"id":"8","name": "test2", "img": "fa fa-asterisk", "view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"9","name": "test7", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"10","name": "test8", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"11","name": "test9", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"12","name": "test10", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"13","name": "test11", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"14","name": "感统评测管理", "img": "fa fa-briefcase", "view": "brooder.view.main.maincontainer", "option":"", "list": [
+            {"id":"15","name": "T分转换规则管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"16","name": "评测结果管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"17","name": "评测统计", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"18","name": "课程管理", "img": "fa fa-cloud-upload", "view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"19","name": "训练课信息管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"20","name": "个训课程管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"21","name": "课件信息管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"22","name": "题源信息管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"23","name": "网上学习管理", "img": "fa fa-cogs","view": "brooder.view.main.maincontainer","option":"", "list": [
+            {"id":"24","name": "周教案模板管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"25","name": "学习计划模板管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"26","name": "学习计划查看", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"27","name": "个人学习计划管理", "img": "fa fa-lightbulb-o","view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}
+        ]},
+        {"id":"28","name": "数据管理", "img": "fa fa-download","view": "brooder.view.main.maincontainer", "option":"", "list": [
+            {"id":"29","name": "会员管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"30","name": "儿童管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"31","name": "关注管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"32","name": "预约管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"33","name": "积分管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"34","name": "订单管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"35","name": "浏览记录", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"36","name": "系统消息", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []},
+            {"id":"37","name": "反馈管理", "img": "fa fa-lightbulb-o", "view": "brooder.view.group.treetablegroup","option":"option.test.main", "list": []}	
+        ]}
+    ]
+}

@@ -1,0 +1,151 @@
+<!--[select]-->
+<div class="select-lable">
+    <%if(data.required){%>
+    <span style='margin-right:5px;color:#DE5347;'><i class='fa fa-circle'></i></span>
+    <%}%>
+    <%=data.label;%>
+</div>
+<div class="select-items">
+    <%for(var i in data.items){%>
+    <div class="select-items-item" data-find="item" @cache(data.items[i])>
+         <div class="select-items-item-dot">
+             <i class="fa fa-circle-o"></i>
+             <i class="fa fa-circle"></i>
+        </div>
+         <%if(data.items[i].input===true){%>
+         <div class="select-items-item-input divinput" contenteditable="plaintext-only"></div>
+         <%}else{%>
+        <div class="select-items-item-desc"><%=data.items[i].name;%></div>
+        <%}%>
+    </div>
+    <%}%>
+</div>
+<!--[selectc]-->
+<div class="select-lable">
+    <%if(data.required){%>
+    <span style='margin-right:5px;color:#DE5347;'><i class='fa fa-circle'></i></span>
+    <%}%>
+    <%=data.label;%>(多选)
+</div>
+<div class="select-items">
+    <%for(var i in data.items){%>
+    <div class="select-items-item" data-find="item" @cache(data.items[i])>
+         <div class="select-items-item-dot">
+             <i class="fa fa-circle-o"></i>
+             <i class="fa fa-circle"></i>
+        </div>
+        <%if(data.items[i].input===true){%>
+         <div class="select-items-item-input divinput" contenteditable="plaintext-only"></div>
+         <%}else{%>
+        <div class="select-items-item-desc"><%=data.items[i].name;%></div>
+        <%}%>
+    </div>
+    <%}%>
+</div>
+<!--[text]-->
+<div class="text-label">
+    <%if(data.required){%>
+    <span style='margin-right:5px;color:#DE5347;'><i class='fa fa-circle'></i></span>
+    <%}%>
+    <%=data.label;%>
+</div>
+<div class="text-input">
+    <input type="text" placeholder="<%=data.placeholder;%>"/>
+</div>
+<!--[textarea]-->
+<div class="textarea-label">
+    <%if(data.required){%>
+    <span style='margin-right:5px;color:#DE5347;'><i class='fa fa-circle'></i></span>
+    <%}%>
+    <%=data.label;%>
+</div>
+<div class="textarea-input">
+    <div class="input" contenteditable="plaintext-only"></div>
+</div>
+<!--[dpicker]-->
+<div class="dpicker-bg" data-find="bg"></div>
+<div class="dpicker-con"></div>
+<!--[datep]-->
+<div class='datep-label'><%=option.label;%></div>
+<div class="datep-con" data-find='btn'><%=option.value||'';%></div>
+<!--[datepanel]-->
+<div class="datepanel-con">
+    <div class="datepanel-head">
+        <div class="datepanel-head-left" data-find="prev"><i class="fa fa-arrow-left "></i></div>
+        <div class="datepanel-head-center" data-find="current">2015-06</div>
+        <div class="datepanel-head-left" data-find="next"><i class="fa fa-arrow-right"></i></div>
+    </div>
+    <div class="datepanel-middle">
+        <div class="datepanel-middle-cell">一</div>
+        <div class="datepanel-middle-cell">二</div>
+        <div class="datepanel-middle-cell">三</div>
+        <div class="datepanel-middle-cell">四</div>
+        <div class="datepanel-middle-cell">五</div>
+        <div class="datepanel-middle-cell">六</div>
+        <div class="datepanel-middle-cell">日</div>
+    </div>
+    <div class="datepanel-body" data-find="databody"></div>
+    <%if(data.withTime){%>
+    <div class="datepanel-extend">
+        <div class="datepanel-time-hour" data-find="shour"><span>0</span> 时</div>
+        <div class="datepanel-time-time" data-find="stime"><span>0</span> 分</div>
+        <div class="datepanel-time-second" data-find="ssecond"><span>0</span> 秒</div>
+    </div>
+    <div class="datepanel-hour" data-find="phour">
+        <%for(var i=0;i<24;i++){%>
+        <div class="datepanel-hour-cell" data-find="hour"><%=i;%></div>
+        <%}%>
+    </div>
+    <div class="datepanel-sound" data-find="psecond">
+        <%for(var i=0;i<60;i++){%>
+        <div class="datepanel-sound-cell" data-find="second"><%=i;%></div>
+        <%}%>
+    </div>
+    <%}%>
+    <div class="datepanel-year" data-find="yearbody"></div>
+    <div class="datepanel-month" data-find="monthbody">
+        <%for(var i=1;i<=12;i++){%>
+        <div class="datepanel-month-cell" data-find="month"><%=i;%></div>
+        <%}%>
+    </div>
+</div>
+<div class="datepanel-selected" data-find="selectdate">确定</div>
+<!--[datepanelbody]-->
+<div class="datepanel-body-row">
+<%for(var i=0;i<data.length;i++){%>
+    <div class="datepanel-body-row-cell<%=(data[i].disabled===true?' disabled':'');%>" data-find="day">
+        <%if(data[i].current){%>
+            <div class="datapanel-body-row-cell current"><%=data[i].value;%></div>
+        <%}else if(data[i].selected){%>
+            <div class="datapanel-body-row-cell selected"><%=data[i].value;%></div>
+        <%}else{%>
+        <div class="datapanel-body-row-cell"><%=data[i].value;%></div>
+        <%}%>
+    </div>
+    <%if((i+1)%7===0){%>
+    </div><div class="datepanel-body-row">
+    <%}%>
+<%}%>
+</div>
+<!--[datepanelyear]-->
+<div class="datepanel-year-cell" data-find="yleft"><i class="fa fa-arrow-left"></i></div>
+<%for(var i=0;i<data.length;i++){%>
+<div class="datepanel-year-cell" data-find="year"><%=data[i];%></div>
+<%}%>
+<div class="datepanel-year-cell" data-find="yright"><i class="fa fa-arrow-right"></i></div>
+<!--[multiselect]-->
+<%if(data.label&&data.label!==''){%>
+<div class='label-block'><%=data.label;%></div>
+<%}%>
+<div class='multiselect-con'>
+    <%for(var i in data.defaults){%>
+    <div data-find='item' class='multiselect-con-item' value='<%=data.defaults[i][data.valuename];%>'>
+        <div class="multiselect-con-item-inner"><%=data.defaults[i][data.keyname];%></div>
+    </div>
+    <%}%>
+    <%for(var i in data.remoteData){%>
+    <div data-find='item' class='multiselect-con-item' value='<%=data.remoteData[i][data.valuename];%>'>
+        <div class="multiselect-con-item-inner"><%=data.remoteData[i][data.keyname];%></div>
+    </div>
+    <%}%>
+</div>

@@ -1,0 +1,575 @@
+<!--header-->
+<div class="title-line"></div>
+<div class='ctitle'></div>
+<div class='rtools'>
+    <%for(var i in data.rbtns){%>
+    <div class='editor_super_btn' title='<%=data.rbtns[i].name;%>' data-bind='click:btn' num='<%=i;%>' action='<%=data.rbtns[i].action;%>'><i class='<%=data.rbtns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+<div class="rtools">
+    <div class="cbtn" data-btn="asphone"><i class='fa fa-mobile-phone'></i></div>
+    <div class="cbtn" data-btn="aspad"><i class='fa fa-tablet'></i></div>
+    <div class="cbtn" data-btn="asdesk"><i class='fa fa-laptop'></i></div>
+    <div class="cbtn hover" data-btn="asedit"><i class='fa fa-paint-brush'></i></div>
+</div>
+<!--box-->
+<div class='header'>
+    <div class='modulecolor'></div>
+    <div class='title'><%=data.option.title;%></div>
+</div>
+<div class='content'></div>
+<div class='foot'>
+    <%for(var i in data.option.btns){%>
+    <div class='editor_super_btn' data-bind='click:btn' num='<%=i;%>'><i class='<%=data.option.btns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+<!--module-->
+<div class='module-tab'>
+    <div class='titlecon'>
+        <div class='titlename'>选项</div>
+        <div class='titlename'>属性</div>
+    </div>
+    <div class='contentcon'>
+        <div class='content'></div>
+        <div class='content'>
+            <div class="info">
+                <img style='width:100%;' src='<%=basePath+data.icon;%>'/>
+            </div>
+            <div class="info"><%=data.type;%> <%=data.version;%></div>
+            <div class="info"><%=data.desc;%></div>
+            <div class="info">sort:<%=data.sort;%></div>
+        </div>
+    </div>
+</div>
+<!--modulelist-->
+<div class='header'>
+    <div class='modulecolor'></div>
+    <div class='title'><%=data.title;%></div>
+</div>
+<div class='content'></div>
+<div class='foot'>
+    <%for(var i in data.btns){%>
+    <div class='editor_super_btn' data-bind='click:btn' num='<%=i;%>'><i class='<%=data.btns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+<!--modulelistcontent-->
+<div>
+    <div class='searchbar'>
+        <div class='search-icon'><i class='fa fa-search'></i></div>
+        <div class='search-input'><input type='text' data-bind='keyup:search'/></div>
+    </div>
+    <div class="list">
+        <div class="listname">
+            <%for(var i in data){%>
+            <div class="lister"><%=i;%></div>
+            <%}%>
+        </div>
+        <div class="contentcon">
+            <%for(var i in data){%>
+            <div class="listcontent">
+                <%for(var j in data[i]){%>
+                <div class='modulerow' data-bind='click:rowclick' key='<%=data[i][j].type;%>'>
+                    <div class='icon' style="background-image:url(<%=basePath+data[i][j].icon;%>)">
+                        <div class="iconcheck" data-bind='click:dbclick'><i class='fa fa-check-circle'></i></div>
+                    </div>
+                    <div class='info'>
+                        <div class='title'><i class="fa fa-cog"></i>&nbsp;<span class='cctitle'><%=data[i][j].type;%>   v<%=data[i][j].version;%></span></div>
+                        <div class='desc'><%=data[i][j].desc;%></div>
+                    </div>
+                </div> 
+                <%}%>
+            </div>
+            <%}%>
+        </div>
+    </div>
+</div>
+<!--layoutmapping-->
+<div class='header'>
+    <div class='modulecolor'></div>
+    <div class='title'><%=data.title;%></div>
+</div>
+<div class='content'>
+    <div style='padding:10px;'>
+        <div>
+            <div style='line-height:30px;'>平均分配</div>
+            <div style='margin: 10px 0 10px 0;'>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>1</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>2</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>3</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>4</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>5</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div style='height:0;border-bottom: 1px solid #D7D7D7;'></div>
+        <div class="customset">
+            <div style='line-height:30px;'>自定义</div>
+            <div>
+                <span class='editor_child_page_en'>列数：</span>
+                <select class='editor_child_page_en_selected lieshuis' data-find='option'>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </div>
+            <div class='editor_child_page_addrow' data-find='addcon'>
+                <div>
+                    <span class='editor_child_page_en'>列[1]：</span>
+                    <select class='editor_child_page_en_selected lsis'>
+                        <option>1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='editor_child_page_message'><i class='fa fa-info-circle'></i> <span></span></div>
+<div class='foot'>
+    <%for(var i in data.btns){%>
+    <div class='editor_super_btn' data-bind='click:btn' num='<%=i;%>'><i class='<%=data.btns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+
+<!--globallayoutmapping-->
+<div class='header'>
+    <div class='modulecolor'></div>
+    <div class='title'><%=data.title;%></div>
+</div>
+<div class='content'>
+    <div style='padding:10px;'>
+        <div>
+            <label class='editor_child_selected tlis'>
+                <div class='editor_child_selected_num' data-bind='click:num2' style='width:auto;'>
+                    <div style='font-size:13px;line-height: 30px;padding:0 15px 0 15px;'>通栏</div>
+                    <div class='editor_child_selected_dot'></div>
+                </div>
+            </label>
+        </div>
+        <div style='height:0;border-bottom: 1px solid #D7D7D7;'></div>
+        <div>
+            <div style='line-height:30px;'>平均分配</div>
+            <div style='margin: 10px 0 10px 0;'>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>1</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>2</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>3</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>4</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+                <label class='editor_child_selected fsis'>
+                    <div class='editor_child_selected_num' data-bind='click:num'>
+                        <div class='fsnum'>5</div>
+                        <div class='editor_child_selected_dot'></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div style='height:0;border-bottom: 1px solid #D7D7D7;'></div>
+        <div class="customset">
+            <div style='line-height:30px;'>自定义</div>
+            <div>
+                <span class='editor_child_page_en'>列数：</span>
+                <select class='editor_child_page_en_selected lieshuis' data-find='option'>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </div>
+            <div class='editor_child_page_addrow' data-find='addcon'>
+                <div>
+                    <span class='editor_child_page_en'>列[1]占比：</span>
+                    <select class='editor_child_page_en_selected lsis'>
+                        <option>1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='editor_child_page_message'><i class='fa fa-info-circle'></i> <span></span></div>
+<div class='foot'>
+    <%for(var i in data.btns){%>
+    <div class='editor_super_btn' data-btn='<%=data.btns[i].action;%>' num='<%=i;%>'><i class='<%=data.btns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+
+<!--layoutsetting-->
+<div class='header'>
+    <div class='modulecolor'></div>
+    <div class='title'><%=data.title;%></div>
+</div>
+<div class='content'>
+    <div style='padding:10px;'>
+        <div>
+            <div style='line-height:30px;'>phone时调整列数</div>
+            <div>
+                <select class='on480' value='<%=data.parameters.phone;%>'>
+                    <option value='0'<%=(data.parameters.phone==='0'?' selected':'');%>>不调整</option>
+                    <option value='1'<%=(data.parameters.phone==='1'?' selected':'');%>>调整为1列</option>
+                    <option value='2'<%=(data.parameters.phone==='2'?' selected':'');%>>调整为2列</option>
+                    <option value='3'<%=(data.parameters.phone==='3'?' selected':'');%>>调整为3列</option>
+                </select>
+            </div>
+            <div style='line-height:30px;'>pad时调整列数</div>
+            <div>
+                <select class='on768' value='<%=data.parameters.pad;%>'>
+                    <option value='0'<%=(data.parameters.pad==='0'?' selected':'');%>>不调整</option>
+                    <option value='1'<%=(data.parameters.pad==='1'?' selected':'');%>>调整为1列</option>
+                    <option value='2'<%=(data.parameters.pad==='2'?' selected':'');%>>调整为2列</option>
+                    <option value='3'<%=(data.parameters.pad==='3'?' selected':'');%>>调整为3列</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div style='line-height:30px;'>desktop时调整列数</div>
+            <div class='clospancon'>
+                <%for(var i in data.parameters.rows){%>
+                <div class="colspan" num='<%=i;%>'>
+                    <div>列[<%=(i/1+1);%>]</div>
+                    <div class='cnt'>
+                        <select style='width:40px;border:0;text-align: center;' value='<%=data.parameters.rows[i];%>'>
+                            <option value='1'<%=(data.parameters.rows[i]==='1'?' selected':'');%>>1</option>
+                            <option value='2'<%=(data.parameters.rows[i]==='2'?' selected':'');%>>2</option>
+                            <option value='3'<%=(data.parameters.rows[i]==='3'?' selected':'');%>>3</option>
+                            <option value='4'<%=(data.parameters.rows[i]==='4'?' selected':'');%>>4</option>
+                        </select>
+                        <div class='nbtn' data-bind='click:btn' type='moveup'><i class='fa fa-angle-up'></i></div>
+                        <div class='nbtn' data-bind='click:btn' type='movedown'><i class='fa fa-angle-down'></i></div>
+                        <div class='nbtn' data-bind='click:btn' type='remove'><i class='fa fa-times'></i></div>
+                    </div>
+                </div>
+                <%}%>
+            </div>
+            <div>
+                <div class='xbtn' data-bind='click:add'><i class='fa fa-plus'></i> 添加列</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='editor_child_page_message'><i class='fa fa-info-circle'></i> <span></span></div>
+<div class='foot'>
+    <%for(var i in data.btns){%>
+    <div class='editor_super_btn' data-bind='click:btns' num='<%=i;%>'><i class='<%=data.btns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+
+<!--layoutsettingcolspan-->
+<div class="colspan">
+    <div>列[new]</div>
+    <div class='cnt'>
+        <select style='width:40px;border:0;text-align: center;'>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+        </select>
+        <div class='nbtn' data-bind='click:btn' type='moveup'><i class='fa fa-angle-up'></i></div>
+        <div class='nbtn' data-bind='click:btn' type='movedown'><i class='fa fa-angle-down'></i></div>
+        <div class='nbtn' data-bind='click:btn' type='remove'><i class='fa fa-times'></i></div>
+    </div>
+</div>
+
+<!--pagelist-->
+<div class='header'>
+    <div class='modulecolor'></div>
+    <div class='title'><%=data.option.title;%></div>
+</div>
+<div class='content'></div>
+<div class='foot'>
+    <%for(var i in data.option.btns){%>
+    <div class='editor_super_btn' data-bind='click:btn' num='<%=i;%>'><i class='<%=data.option.btns[i].icon;%>'></i></div>
+    <%}%>
+</div>
+<!--pagelistcontent-->
+<div>
+    <div class='searchbar'>
+        <div class='search-icon'><i class='fa fa-search'></i></div>
+        <div class='search-input'><input type='text' data-bind='keyup:search'/></div>
+    </div>
+    <div class="list">
+        <div class="listname">
+            <%for(var i in data){%>
+            <div class="lister"><%=i;%></div>
+            <%}%>
+        </div>
+        <div class="contentcon">
+            <%for(var i in data){%>
+            <div class="listcontent">
+                <%for(var j in data[i]){%>
+                <div class='modulerow' pageid='<%=data[i][j].id;%>' data-bind='click:rowclick'>
+                    <div class='icon'><i class='fa fa-file-text-o'></i></div>
+                    <div class='info'>
+                        <div class='title'><span class='cctitle'><%=(data[i][j].title||'notitle');%></span></div>
+                        <div class='desc'><%=data[i][j].desc;%></div>
+                    </div>
+                    <div class='editor_child_page_btns'>
+                        <div class='editor_cihld_page_btn' data-bind='click:clone'><i class='fa fa-files-o'></i></div>
+                        <div class='editor_cihld_page_btn' data-bind='click:toedit'><i class='fa fa-pencil-square-o'></i></div>
+                    </div>
+                </div> 
+                <%}%>
+            </div>
+            <%}%>
+        </div>
+    </div>
+</div>
+<!--messagebox-->
+<div class="messagebox-mask"></div>
+<div class="messagebox-con" style="width:<%=data.option.width;%>px">
+    <div class='header'>
+        <div class='modulecolor'></div>
+        <div class='title'><%=data.option.title;%></div>
+    </div>
+    <div class='content'>
+        <div style="padding:10px;">
+            <%=module(data.option.inner);%>
+        </div>
+    </div>
+    <div class='foot'>
+        <%for(var i in data.option.btns){%>
+        <div class='editor_super_btn' data-bind='click:btn' num='<%=i;%>'><i class='<%=data.option.btns[i].icon;%>'></i></div>
+        <%}%>
+    </div>
+</div>
+
+<!--pagelistcontentinit-->
+<div class="list">
+    <div class="listname">
+        <%for(var i in data){%>
+        <div class="lister"><%=i;%></div>
+        <%}%>
+    </div>
+    <div class="contentcon">
+        <%for(var i in data){%>
+        <div class="listcontent">
+            <%for(var j in data[i]){%>
+            <div class='modulerow' pageid='<%=data[i][j].id;%>' data-bind='click:rowclick' key='<%=data[i][j].type;%>'>
+                <div class='icon'><i class='fa fa-file-text-o'></i></div>
+                <div class='info'>
+                    <div class='title'><%=(data[i][j].title||'notitle');%></div>
+                    <div class='desc'><%=data[i][j].desc;%></div>
+                </div>
+            </div> 
+            <%}%>
+        </div>
+        <%}%>
+    </div>
+</div>
+<!--advancemessagebox-->
+<div class='amask'></div>
+<div class='abox' style="width:<%=data.option.width;%>">
+    <div class="aheader">
+        <div class='alogo'></div>
+        <div class='adesc'></div>
+    </div>
+    <div class="acontent">
+        <div class='axdesc'><%=data.option.title;%></div>
+        <div class="axcontent"></div>
+    </div>
+    <div class="atools">
+        <%for(var i in data.option.btns){%>
+        <div class='abtn' data-btn='<%=data.option.btns[i].action;%>'><i class='<%=data.option.btns[i].icon;%>'></i></div>
+        <%}%>
+    </div>
+    <div class='acontent-mask'>
+        <div class='acontent-mask-loading'><i class='fa fa-spin fa-refresh'></i></div>
+    </div>
+</div>
+<!--sortlist-->
+<div class="sortlist-title" data-bind='click:toggleall'>
+    <div class="sortlist-title-text">list</div>
+    <div class="sortlist-title-toggle"><i class='fa fa-chevron-down'></i></div>
+</div>
+<div class="sortlist-con">
+<%for(var i in data){%>
+<div class="sortlist-header" num='<%=i;%>'>
+    <div class="sortlist-header-title" data-bind='click:toggle'>
+        <div class="sortlist-header-title-text"><%=i;%></div>
+        <div class="sortlist-header-title-toggle"><i class='fa fa-angle-down'></i></div>
+    </div>
+    <div class="sortlist-header-container">
+        <%for(var t in data[i]){%>
+        <div class="sortlist-container-item" data-find='item' data-bind="click:item" num="<%=i+'-'+t;%>"><i class='fa fa-file-code-o'></i>&nbsp;<%=data[i][t].type||data[i][t].id;%></div>
+        <%}%>
+    </div>
+</div>
+<%}%>
+</div>
+<!--sortlistgroup-->
+<div class='sortlistgroup-sortlist'><%=module(data.option.list);%></div>
+<div class='sortlistgroup-codeditor'><%=module(data.option.editor);%></div>
+<!--leftbar-->
+<div class="hd"></div>
+<div class='ltools'>
+    <div class="editor-super-twobtns">
+        <%for(var i in data.option.rbtns){%>
+        <div class='editor_super_btn' title='<%=data.option.rbtns[i].name;%>' data-bind='click:btn' num='<%=i;%>' action='<%=data.option.rbtns[i].action;%>'><i class='<%=data.option.rbtns[i].icon;%>'></i></div>
+        <%}%>
+    </div>
+    <div class="editor_super_onebtns">
+        <%for(var i in data.option.onebtns){%>
+        <div class="editor-super-xbtn" data-bind='click:btnt' num='<%=i;%>' action='<%=data.option.onebtns[i].action;%>'>
+            <div class='editor_super_btnt'><i class='<%=data.option.onebtns[i].icon;%>'></i></div>
+            <div class="editor-super-desc"><%=data.option.onebtns[i].name;%></div>
+        </div>
+        <%}%>
+    </div>
+    <div class="editor_super_threebtns" data-bind="click:minall"></div>
+</div>
+<!--window-->
+<div class='window-body'>
+    <%=module(data.option.inner);%>
+</div>
+<div class='window-head'>
+    <div class='window-logo'></div>
+    <div class='window-head-title'><%=data.option.title;%></div>
+    <div class='window-head-btns'>
+        <%for(var i in data.option.btns){%>
+        <div class='window-head-btn' title='<%=data.option.btns[i].title;%>' action='<%=data.option.btns[i].action;%>' num='<%=i;%>' data-bind='click:btn'><i class='<%=data.option.btns[i].icon;%>'></i></div>
+        <%}%>
+    </div>
+</div>
+<!--sortlistformgroup-->
+<div class='sortlistformgroup-sortlist'>
+    <div class="sortlistformgroup-searchbar">
+        <div class="sortlistformgroup-input"><input type='text' data-bind='keyup:search'/></div>
+        <div class="sortlistformgroup-icon"><i class='fa fa-search'></i></div>
+    </div>
+    <div class="sortlistformgroup-sortlist-con"><%=module(data.option.list);%></div>
+    <div class="sortlistformgroup-sortlist-btns">
+        <div class="sotlistformgroup-sortlist-btn" data-btn='refresh'><i class='fa fa-refresh'></i></div>
+        <div class="sotlistformgroup-sortlist-btn" data-btn='add'><i class='fa fa-plus'></i></div>
+    </div>
+</div>
+<div class='sortlistformgroup-form'>
+    <div class="sortlistformgroup-form-title">
+        <div class="sortlistformgroup-form-title-desc">Option</div>
+        <div class="sortlistformgroup-form-title-btn" data-btn='download'><i class="fa fa-download"></i></div>
+    </div>
+    <div class='sortlistformgroup-form-con'><%=module(data.option.form);%></div>
+</div>
+<div class='sortlistformgroup-bar' data-btn='hide'><div><i class='fa fa-angle-right'></i></div></div>
+<div class="sortlistformgroup-editor">
+    <%=module(data.option.editor);%>
+</div>
+<!--resourcelist-->
+<div class="resourcelist-head">
+    <div class="resourcelist-head-title">
+        <div class="resourcelist-head-title-desc">CSS</div>
+        <div class="resourcelist-head-title-tools">
+            <div class="resourcelist-head-title-tools-btn" data-bind='click:addcss'><i class='fa fa-plus'></i></div>
+        </div>
+    </div>
+    <div class="resourcelist-head-css">
+        <div class="resourcelist-head-item">2222222.css</div>
+    </div>
+</div>
+<div class="resourcelist-head">
+    <div class="resourcelist-head-title">
+        <div class="resourcelist-head-title-desc">JavaScript</div>
+        <div class="resourcelist-head-title-tools">
+            <div class="resourcelist-head-title-tools-btn" data-bind='click:addjs'><i class='fa fa-plus'></i></div>
+        </div>
+    </div>
+    <div class="resourcelist-head-js">
+        <div class="resourcelist-head-item">222222222.js</div>
+    </div>
+</div>
+<div class="resourcelist-build" data-find='build'>
+    <div class="resourcelist-build-head">
+        <div class="resourcelist-build-head-input"><input type='text'/></div>
+        <div class="resourcelist-build-head-btn" data-bind='click:build'><i class='fa fa-check'></i></div>
+    </div>
+    <div class="resourcelist-build-body" data-bind='click:buildclose'></div>
+</div>
+<!--editortool-->
+<div class="editor-tool-editor">
+    <div class="editor-tool-editor-head">
+        <div class="editor-tool-editor-head-title" data-find="title"><%=data.option.title;%></div>
+        <div class="editor-tools">
+            <%for(var i in data.option.btns){%>
+            <div class='editor-tools-btn' title='<%=data.option.btns[i].title;%>' num='<%=i;%>' data-bind='click:btn' action='<%=data.option.btns[i].action;%>'><i class='<%=data.option.btns[i].icon;%>'></i></div>
+            <%}%>
+        </div>
+    </div>
+    <div class="editor-tool-editor-con">
+        <%=module(data.option.editor);%>
+    </div>
+</div>
+<!--editresource-->
+<div class="editresource-left">
+    <%=module(data.option.list);%>
+</div>
+<div class="editresource-right"></div>
+<!--optiongetter-->
+<div class="optiongetter-btn-con" data-bind="click:btn"><i class='fa fa-code'></i>&nbsp;<div class='optiongetter-btn'></div></div>
+<!--optiongettermask-->
+<div class="optiongetter-mask">
+    <div class="optiongetter-mes">
+        <div class="optiongetter-mes-header">option</div>
+        <div class="optiongetter-mes-con">
+        </div>
+        <div class="optiongetter-mes-tools">
+            <div class='optiongetter-mes-tools-btn'><i class='fa fa-check'></i></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+    "code": "1",
+    "data":[
+        {
+            "img":"mart/images/temai.png",
+            "name":"精选牛肉",
+            "price":"100",
+            "oldprice":"200"
+        },
+        {
+            "img":"mart/images/temai.png",
+            "name":"精选牛肉",
+            "price":"100",
+            "oldprice":"200"
+        },
+        {
+            "img":"mart/images/temai.png",
+            "name":"精选牛肉",
+            "price":"100",
+            "oldprice":"200"
+        }
+    ]
+}

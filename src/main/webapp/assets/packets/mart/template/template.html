@@ -1,0 +1,777 @@
+<!--[test]-->
+<div class="">this is for test</div>
+<div class="" style="height:1500px">
+    <a href="test/page1" data-bind="click:link">page1</a>
+</div>
+<!--[test2]-->
+<div class="">this is for test</div>
+<div class="" style="height:1500px">
+    <a href="test/page2" data-bind="click:link">page2</a>
+</div>
+<!--[404]-->
+<div class="o404o-content"></div>
+<!--[pictab]-->
+<div class="pictab-container" data-find="container" style="width:<%=100*data.length;%>%">
+    <%for(var i in data){%>
+    <div class="pictab-content" href="<%=data[i].url;%>" style="width:<%=100/data.length;%>%"><img src="<%=data[i].pic;%>"/></div>
+    <%}%>
+</div>
+<div class="pictab-titles">
+    <%for(var i in data){%>
+    <div class="pictab-title" data-find="title"></div>
+    <%}%>
+</div>
+<!--[btntab]-->
+<div class="btntab-titles">
+    <%for(var i in data){%>
+    <div class="btntab-title" data-find="title" num="<%=i;%>"><%=data[i].title;%></div>
+    <%}%>
+</div>
+<div class="btntab-container" data-find="container" style="width:<%=100*data.length;%>%">
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">1</div>
+    </div>
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">2</div>
+    </div>
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">3</div>
+    </div>
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">4</div>
+    </div>
+</div>
+<!--[messagebox]-->
+<div class='messagebox-conwin'>
+    <div class='messagebox-title'><%=data.title;%></div>
+    <div class='messagebox-content'><%=data.content;%></div>
+    <div class='messagebox-btns'>
+        <%for(var i in data.btns){%>
+        <div data-find='btn' class='messagebox--btn' action='<%=data.btns[i].action;%>'><%=data.btns[i].name;%></div>
+        <%}%>
+    </div>
+</div>
+<!--[bottombar]-->
+<div class="bottombar-offset"></div>
+<div class="bottombar-totop" data-find="totop"><i class="fa fa-long-arrow-up"></i></div>
+<div class="bottombar-btns">
+    <%for(var i in data){%>
+    <div class="bottombar-btn" data-find="btn" num="<%=i;%>" style="width:<%=100/data.length;%>%">
+        <div class="bottombar-btn-icon"><i class="<%=data[i].icon;%>"></i></div>
+        <div class="bottombar-btn-name"><%=data[i].name;%></div>
+    </div>
+    <%}%>
+</div>
+<!--[topbar]-->
+<div class="topbar-offset"></div>
+<div class="topbar-fixed">
+    <div class="topbar-left">
+        <%for(var i in data.leftbtns){%>
+        <div class="topbar-left-btn" data-find="btn" action="<%=data.leftbtns[i].action;%>"><i class="<%=data.leftbtns[i].icon;%>"></i></div>
+        <%}%>
+    </div>
+    <div class="topbar-title"><%=data.title;%></div>
+    <div class="topbar-right">
+        <%for(var i in data.rightbtns){%>
+        <div class="topbar-right-btn" data-find="btn" action="<%=data.rightbtns[i].action;%>"><i class="<%=data.rightbtns[i].icon;%>"></i></div>
+        <%}%>
+    </div>
+</div>
+<!--[datalist]-->
+<div class="datalist-container" data-find="container"></div>
+<div class="datalist-container-nodata" data-find='nodata'>
+    <div class="datalist-container-nodata-pic"></div>
+    <div class="datalist-container-nodata-desc">没有更多数据</div>
+</div>
+<div class="datalist-footer" data-find='footer'>
+    <div class="datalist-footer-click" data-find="toload">点击继续加载</div>
+    <div class="datalist-footer-loading" data-find="loading">
+        <i class="fa fa-spin fa-refresh"></i> 正在加载...
+    </div>
+</div>
+<!--[datalisttest]-->
+<div class="datalist-con">
+    <%for(var i in data){%>
+    <div class="datalist-item" data-find="item" href="goods">
+        <div class="datalist-item-img">
+            <img src="<%=data[i].img;%>"/>
+        </div>
+        <div class="datalist-item-desc">
+            <div class="datalist-item-desc-desc"><%=data[i].desc;%></div>
+            <div class="datalist-item-desc-price">￥<%=data[i].price;%></div>
+            <div class="datalist-item-desc-time"><%=data[i].time;%></div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<!--[datalist-twocol]-->
+<div class="datalist-twocol-con">
+    <%for(var i in data){%>
+    <div class="datalist-twocol-item" data-find="item" href="goods">
+        <div class="datalist-twocol-item-img">
+            <img src="<%=data[i].img;%>"/>
+        </div>
+        <div class="datalist-twocol-item-desc-desc"><%=data[i].desc;%></div>
+        <div class="datalist-twocol-item-desc">
+            <div class="datalist-twocol-item-desc-price">￥<%=data[i].price;%></div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<!--[datalist-comment]-->
+<div class="datalist-comment-con">
+    <%for(var i in data){%>
+    <div class="datalist-comment-item" data-find="item" href="goods">
+        <div class="datalist-comment-item-img">
+            <img src="<%=data[i].img;%>"/>
+            <div class="datalist-comment-item-name"><%=data[i].name;%></div>
+        </div>
+        <div class="datalist-comment-item-desc">
+            <div class="datalist-comment-item-desc-desc"><%=data[i].desc;%></div>
+            <div class="datalist-comment-item-desc-time"><%=data[i].time;%></div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<!--[datalist-orderlist]-->
+<div class="datalist-orderlist-con">
+    <%for(var i in data){%>
+    <div class="datalist-orderlist-item">
+        <div class="datalist-orderlist-item-top">
+            <div class="datalist-orderlist-item-top-icon"></div>
+            <%var st=data[i].state,stt='';if(st===1){stt='未付款';}else if(st===2){stt='待收货';}else if(st===3){stt='待发货';}%>
+            <div class="datalist-orderlist-item-top-state"><%=stt;%></div>
+        </div>
+        <div class="datalist-orderlist-item-middle" data-find="item" href="orderdetail">
+            <%for(var t in data[i].goods){%>
+            <div class="datalist-orderlist-item-middle-goods">
+                <div class="datalist-orderlist-item-img">
+                    <img src="<%=data[i].goods[t].img;%>"/>
+                </div>
+                <div class="datalist-orderlist-item-desc"><%=data[i].goods[t].desc;%></div>
+            </div>
+            <%}%>
+        </div>
+        <div class="datalist-orderlist-item-total"><%=data[i].total;%></div>
+        <%if(st===1){%>
+        <div class="datalist-orderlist-item-footer">
+            <div class="datalist-orderlist-item-footer-quxiao">取消订单</div>
+            <div class="datalist-orderlist-item-footer-fukuan">在线支付</div>
+        </div>
+        <%}else if(st===2){%>
+        <div class="datalist-orderlist-item-footer">
+            <div class="datalist-orderlist-item-footer-checkhistory"  data-find="item" href="express">查看快递</div>
+        </div>
+        <%}else if(st===3){%>
+        <div class="datalist-orderlist-item-footer">
+            <div class="datalist-orderlist-item-footer-tuihuo">退货</div>
+        </div>
+        <%}%>
+    </div>
+    <%}%>
+</div>
+<!--[datalist-shoppingcar]-->
+<div class="datalist-shoppingcar-con">
+    <%for(var i in data){%>
+    <div class="datalist-shoppingcar-item">
+        <div class="datalist-shoppingcar-item-goods">
+            <div class="datalist-shoppingcar-check" data-find='check'>
+                <i class="fa fa-circle-thin"></i>
+                <i class="fa fa-check-circle"></i>
+            </div>
+            <div class="datalist-shoppingcar-item-img">
+                <img src="<%=data[i].img;%>"/>
+            </div>
+            <div class="datalist-shoppingcar-item-desc" data-find="item" href="goods">
+                <div class="datalist-shoppingcar-item-desc-desc"><%=data[i].desc;%></div>
+                <div class="datalist-shoppingcar-item-desc-price">￥<%=data[i].price;%></div>
+            </div>
+        </div>
+        <div class="datalist-shoppingcar-btns">
+            <div class="datalist-shoppingcar-btns-minus" data-find='minus'><i class="fa fa-minus"></i></div>
+            <div class="datalist-shoppingcar-btns-num"><%=data[i].total;%></div>
+            <div class="datalist-shoppingcar-btns-plus" data-find='plus'><i class="fa fa-plus"></i></div>
+            <div class="datalist-shoppingcar-btns-delete" data-find='remove'>删除</div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<!--[shoppingcarbtn]-->
+<div class="shoppingcarbtn-offset"></div>
+<div class="shoppingcarbtn-btns">
+    <div class="shoppingcarbtn-btns-all" data-find='check'>
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+    <div class="shoppingcarbtn-btns-total">总计￥1000</div>
+    <div class="shoppingcarbtn-btns-pay" data-find="pay">支付</div>
+</div>
+<!--[searchbar]-->
+<div class="searchbar-logo"></div>
+<div class="searchbar-input-con">
+    <div class="searchbar-input-con-input"><input type="text" placeholder="<%=option.placeholder;%>"/></div>
+    <div class="searchbar-input-con-icon" data-find="search"><i class="fa fa-search"></i></div>
+</div>
+<!--[multisearch]-->
+<div class="multisearch-bar">
+    <div class="multisearch-droplist" data-find='droplist'>
+        <div class="multisearch-droplist-title">综合 <i class="fa fa-angle-down"></i></div>
+        <div class="multisearch-droplist-list">
+            <div class="multisearch-droplist-list-item" data-find='droplistitem'>综合</div>
+            <div class="multisearch-droplist-list-item" data-find='droplistitem'>热卖</div>
+            <div class="multisearch-droplist-list-item" data-find='droplistitem'>推荐</div>
+        </div>
+    </div>
+    <div class="multisearch-query" data-find='btn' key='pricesort'>价格 <i class="fa fa-caret-down"></i></div>
+    <div class="multisearch-query" data-find='btn' key='sellsort'>销量 <i class="fa fa-caret-down"></i></div>
+    <div class="multisearch-btn" data-find='filter'>
+        <div class="multisearch-btn-title">筛选 <i class="fa fa-filter"></i></div>
+    </div>
+</div>
+<div class="multisearch-filter">
+    <div class="multisearch-filter-con">
+        <div class="multisearch-filter-item">
+            <div class="multisearch-filter-item-title">价格</div>
+            <div class="multisearch-filter-item-select" key='price'>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='0-50'>0-50</div>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='50-100'>50-100</div>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='100-150'>100-150</div>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='150-200'>150-200</div>
+            </div>
+        </div>
+        <div class="multisearch-filter-item">
+            <div class="multisearch-filter-item-title">分类</div>
+            <div class="multisearch-filter-item-select" key='sort'>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='1'>精品牛肉</div>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='2'>精品牛肉</div>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='3'>精品牛肉</div>
+                <div data-find='selectsort' class="multisearch-filter-item-select-sort" value='4'>精品牛肉</div>
+            </div>
+        </div>
+    </div>
+    <div class="multisearch-filter-btns">
+        <div class="multisearch-filter-btn" data-find='selectend'>确认</div>
+    </div>
+</div>
+<!--[login]-->
+<div class='login-head'></div>
+<div class='login-form-con'>
+    <div class="login-form-listform">
+        <@module type="{{option.formType}}"/>
+    </div>
+    <div class='login-btn-con'>
+        <div class='login-button' data-find='login'>登陆</div>
+    </div>
+</div>
+<div class="login-footer" data-find="footer">
+    <div class="login-footer-btn" data-find="password">忘记密码</div>
+    <div class="login-footer-btn" data-find="regist">注册</div>
+</div>
+<!--[iconmapping]-->
+<div class="iconmapping-row">
+    <%for(var i=0;i<data.length;i++){%>
+        <div class="iconmapping-cell">
+            <div class="iconmapping-cell-icon" data-find='btn' href="<%=data[i].url;%>">
+                <img src="<%=data[i].icon;%>"/>
+            </div>
+            <div class="iconmapping-cell-desc"><%=data[i].name;%></div>
+        </div>
+        <%if((i+1)%4===0){%>
+</div>
+<div class="iconmapping-row">
+    <%}%>
+    <%}%>
+</div>
+<!--[wrapline]-->
+<div class="wrapline-desc"></div>
+<div class="wrapline-desc-text"><%=data;%></div>
+<!--[wraptitle]-->
+<div class="wraptitle-text"><%=data;%></div>
+<!--[header]-->
+<div class="header-text"><%=data.title;%></div>
+<!--[regist]-->
+<@module type="{{option.formType}}"/>
+<div class="regist-btn" data-find="submit">注册</div>
+<!--[singlestatebar]-->
+<%for(var i in data){%>
+<div class="singlestatebar-item" num="<%=i;%>" data-find="btn"><%=data[i].name;%></div>
+<%}%>
+<!--[sortmapping]-->
+<div class="sortmapping-row">
+    <%for(var i=0;i<data.length;i++){%>
+        <div class="sortmapping-cell">
+            <div class="sortmapping-cell-desc"><%=data[i].name;%></div>
+        </div>
+        <%if((i+1)%5===0){%>
+</div>
+<div class="sortmapping-row">
+    <%}%>
+    <%}%>
+</div>
+<!--[temai]-->
+<%for(var i in data){%>
+<div class="temai-goods">
+    <div class="temail-goods-img">
+        <img src="<%=data[i].img;%>"/>
+    </div>
+    <div class="temail-goods-price">
+        <div class="temail-goods-price-now">￥<%=data[i].price;%></div>
+        <div class="temail-goods-price-old">￥<%=data[i].oldprice;%></div>
+    </div>
+</div>
+<%}%>
+<!--[goodsboardone]-->
+<div class="goodsboardone-left">
+    <img src="<%=data[0].img;%>"/>
+</div>
+<div class="goodsboardone-right">
+    <div class="goodsboardone-right-top">
+        <img src="<%=data[1].img;%>"/>
+    </div>
+    <div class="goodsboardone-right-bottom">
+        <div class="goodsboardone-right-bottom-left"><img src="<%=data[2].img;%>"/></div>
+        <div class="goodsboardone-right-bottom-right"><img src="<%=data[3].img;%>"/></div>
+    </div>
+</div>
+<!--[goodsboardtwo]-->
+<div class="goodsboardtwo-left">
+    <img src="<%=data[0].img;%>"/>
+</div>
+<div class="goodsboardtwo-right">
+    <div class="goodsboardtwo-right-top">
+        <img src="<%=data[1].img;%>"/>
+    </div>
+    <div class="goodsboardtwo-right-bottom">
+        <img src="<%=data[2].img;%>"/>
+    </div>
+</div>
+<!--[goodsdetail]-->
+<div class="goodsdetail-top">
+    <div class="goodsdetail-top-left">
+        <div class="goodsdetail-top-left-desc">Win10版Office简报应用Sway上架Windows10应用商店</div>
+        <div class="goodsdetail-top-left-price">￥990</div>
+    </div>
+    <div class="goodsdetail-top-right">
+        <div class="goodsdetail-top-right-start"><i class='fa fa-star-o'></i></div>
+    </div>
+</div>
+<div class="goodsdetail-middle">Win10版Office简报应用Sway上架Windows10</div>
+<div class="goodsdetail-linebtn" data-find='goodsdetail'>
+    <div class="goodsdetail-linebtn-desc">商品详情</div>
+    <div class="goodsdetail-linebtn-arrow"><i class='fa fa-angle-right'></i></div>
+</div>
+<div class="goodsdetail-linebtn" data-find='goodscomment'>
+    <div class="goodsdetail-linebtn-desc">好评99%  2000人评价</div>
+    <div class="goodsdetail-linebtn-arrow"><i class='fa fa-angle-right'></i></div>
+</div>
+<div class="goodsdetail-btn">
+    <div class="goodsdetail-btn-down"><i class='fa fa-minus'></i></div>
+    <div class="goodsdetail-btn-num">1</div>
+    <div class="goodsdetail-btn-down"><i class='fa fa-plus'></i></div>
+    <div class="goodsdetail-btn-btn shoppingcar">
+        <div class="goodsdetail-btn-btn-a">加入购物车</div>
+        <div class="goodsdetail-btn-btn-b"></div>
+    </div>
+</div>
+<!--[commentprogress]-->
+<div class="commentprogress-left">
+    <div class="commentprogress-left-desc">100%</div>
+    <div class="commentprogress-left-name">好评度</div>
+</div>
+<div class="commentprogress-right">
+    <div class="commentprogress-right-progresser">
+        <div class="commentprogress-right-progresser-name">好评(92%)</div>
+        <div class="commentprogress-right-progresser-bar">
+            <div class="commentprogress-right-progresser-bar-num"></div>
+        </div>
+    </div>
+    <div class="commentprogress-right-progresser">
+        <div class="commentprogress-right-progresser-name">好评(92%)</div>
+        <div class="commentprogress-right-progresser-bar">
+            <div class="commentprogress-right-progresser-bar-num"></div>
+        </div>
+    </div>
+    <div class="commentprogress-right-progresser">
+        <div class="commentprogress-right-progresser-name">好评(92%)</div>
+        <div class="commentprogress-right-progresser-bar">
+            <div class="commentprogress-right-progresser-bar-num"></div>
+        </div>
+    </div>
+</div>
+<!--[goodsdetailcontent]-->
+<div class="btntab-titles">
+    <%for(var i in data){%>
+    <div class="btntab-title" data-find="title" num="<%=i;%>"><%=data[i].title;%></div>
+    <%}%>
+</div>
+<div class="btntab-container" data-find="container" style="width:<%=100*data.length;%>%">
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">
+            我们就看到有消息称HTC的全新中端新机Desire 728已经通过工信部的审批，包括规格和外观设计都已经曝光，因此这款新机距离和我们正式见面也用不了多久。而现在，Desire 728虽然依然尚未正式对外公布，但是已经有这款新机的清晰照片出现在互联网上，可以让我们看到完整
+        </div>
+    </div>
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">
+            我们就看到有消息称HTC的全新中端新机Desire 728已经通过工信部的审批，包括规格和外观设计都已经曝光，因此这款新机距离和我们正式见面也用不了多久。
+        </div>
+    </div>
+    <div class="btntab-content" style="width:<%=100/data.length;%>%">
+        <div class="btntab-content-inner">
+            我们就看到有消息称HTC的全新中端新机Desire 728已经通过工信部的审批
+        </div>
+    </div>
+</div>
+<!--[userheader]-->
+<div class="userheader-icon">
+    <img src="<%=basePath+'mart/images/5.jpg';%>"/>
+</div>
+<div class="userheader-desc">xxxxx</div>
+<!--[orderdetail]-->
+<div class="orderdetail-info">
+    <div class="orderdetail-info-line">订单编号:<%=data.orderNo;%></div>
+    <div class="orderdetail-info-line">订单金额:￥<%=data.orderNo;%></div>
+    <div class="orderdetail-info-line">运费:￥<%=data.orderNo;%></div>
+    <div class="orderdetail-info-line">订单日期:<%=data.orderNo;%></div>
+</div>
+<div class="orderdetail-goodslist">
+    <%for(var i in data.goods){%>
+    <div class="orderdetail-goodslist-goods">
+        <div class="orderdetail-goodslist-goods-img">
+            <img src="<%=data.goods[i].img;%>"/>
+        </div>
+        <div class="orderdetail-goodslist-goods-desc">
+            <%=data.goods[i].desc;%>
+        </div>
+    </div>
+    <%}%>
+</div>
+<div class="orderdetail-userinfo">
+    <div class="orderdetail-userinfo-left">
+        <div class="orderdetail-userinfo-left-user"><%=data.user;%></div>
+        <div class="orderdetail-userinfo-left-address"><%=data.address;%></div>
+    </div>
+    <div class="orderdetail-userinfo-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="orderdetail-paytype"><%=data.paytype;%></div>
+<div class="orderdetail-kuaidi">
+    <div class=""><%=data.expresstype;%></div>
+    <div class=""><%=data.expresstime;%></div>
+    <div class=""><%=data.expressdate;%></div>
+</div>
+<div class="orderdetail-jifen">
+    <div class="orderdetail-jifen-left">
+        积分 <%=data.integral;%> 可兑换 ￥<%=data.integral/100;%>
+    </div>
+    <div class="orderdetail-jifen-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<div class="orderdetail-youhui">
+    <div class="orderdetail-youhui-left">
+        优惠券 <%=data.favourable;%>张可用
+    </div>
+    <div class="orderdetail-youhui-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="orderdetail-fapiao">
+    <div class="orderdetail-fapiao-left">
+        <div class=""><%=data.invoicetype;%> <%=data.invoiceowner;%></div>
+        <div class=""><%=data.invoicedesc;%></div>
+    </div>
+    <div class="orderdetail-fapiao-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="orderdetail-btns">
+    <div class="orderdetail-btn-cancle">取消订单</div>
+    <div class="orderdetail-btn-pay">在线支付</div>
+</div>
+<div style="height:80px"></div>
+<!--[worderdetail]-->
+<div class="orderdetail-userinfo" data-find="contact">
+    <div class="orderdetail-userinfo-left">
+        <div class="orderdetail-userinfo-left-user"><%=data.user;%></div>
+        <div class="orderdetail-userinfo-left-address"><%=data.address;%></div>
+    </div>
+    <div class="orderdetail-userinfo-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="orderdetail-goodslist">
+    <%for(var i in data.goods){%>
+    <div class="orderdetail-goodslist-goods">
+        <div class="orderdetail-goodslist-goods-img">
+            <img src="<%=data.goods[i].img;%>"/>
+        </div>
+        <div class="orderdetail-goodslist-goods-desc">
+            <%=data.goods[i].desc;%>
+        </div>
+    </div>
+    <%}%>
+</div>
+<div class="orderdetail-paytype-get">
+    <div class="orderdetail-paytype-get-line">
+        <div class="orderdetail-paytype-get-line-left">在线支付</div>
+        <div class="orderdetail-paytype-get-line-right check">
+            <i class="fa fa-circle-thin"></i>
+            <i class="fa fa-check-circle"></i>
+        </div>
+    </div>
+    <div class="orderdetail-paytype-get-line">
+        <div class="orderdetail-paytype-get-line-left">货到付款</div>
+        <div class="orderdetail-paytype-get-line-right">
+            <i class="fa fa-circle-thin"></i>
+            <i class="fa fa-check-circle"></i>
+        </div>
+    </div>
+</div>
+<div class="orderdetail-kuaidi">
+    <div class=""><%=data.expresstype;%></div>
+    <div class=""><%=data.expresstime;%></div>
+    <div class=""><%=data.expressdate;%></div>
+</div>
+<div class="orderdetail-jifen">
+    <div class="orderdetail-jifen-left">
+        积分 <%=data.integral;%> 可兑换 ￥<%=data.integral/100;%>
+    </div>
+    <div class="orderdetail-jifen-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<div class="orderdetail-youhui" data-find="link" href="selectfavourable?id=0000">
+    <div class="orderdetail-youhui-left">
+        优惠券 <%=data.favourable;%>张可用
+    </div>
+    <div class="orderdetail-youhui-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="orderdetail-fapiao" data-find="link" href="bill">
+    <div class="orderdetail-fapiao-left">
+        <div class=""><%=data.invoicetype;%> <%=data.invoiceowner;%></div>
+        <div class=""><%=data.invoicedesc;%></div>
+    </div>
+    <div class="orderdetail-fapiao-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="orderdetail-btns">
+    <div class="orderdetail-btn-pay">在线支付</div>
+</div>
+<div style="height:80px"></div>
+<!--[datalist-addresslist]-->
+<div class="datalist-addresslist-con">
+    <%for(var i in data){%>
+    <div class="datalist-addresslist-item">
+        <div class="datalist-addresslist-item-name"><%=data[i].name;%>    <%=data[i].phone;%></div>
+        <div class="datalist-addresslist-item-address"><%=data[i].address;%></div>
+        <div class="datalist-addresslist-item-btns">
+            <div class="datalist-addresslist-item-btns-check">
+                <i class="fa fa-circle-thin"></i>
+                <i class="fa fa-check-circle"></i>
+            </div>
+            <div class="datalist-addresslist-item-btns-a">默认地址</div>
+            <div class="datalist-addresslist-item-btns-edit" data-find="item" href="editaddress">编辑</div>
+            <div class="datalist-addresslist-item-btns-delete">删除</div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<!--[addaddressbtn]-->
+<div class="addaddressbtn-offset"></div>
+<div class="addaddressbtn-btn"><i class="fa fa-plus"></i> 添加地址</div>
+<!--[datalist-favourable]-->
+<div class="datalist-favourable-con">
+    <%for(var i in data){%>
+    <div class="datalist-favourable-item">
+        <div class="datalist-favourable-item-from">来源:<%=data[i].from;%></div>
+        <div class="datalist-favourable-item-method">使用方法:<%=data[i].method;%></div>
+        <div class="datalist-favourable-item-time">有效时间:<%=data[i].fromTime;%>至<%=data[i].toTime;%></div>
+        <div class="datalist-favourable-item-btns">
+            <div class="datalist-favourable-item-btns-a">￥<%=data[i].money;%></div>
+            <div class="datalist-favourable-item-btns-check">
+                <i class="fa fa-circle-thin"></i>
+                <i class="fa fa-check-circle"></i>
+            </div>
+        </div>
+        <div class="datalist-favourable-item-btns-footer"></div>
+    </div>
+    <%}%>
+</div>
+<!--[favourablebtn]-->
+<div class="favourablebtn-offset"></div>
+<div class="favourablebtn-btns">
+    <div class="favourablebtn-check">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+    <div class="favourablebtn-a">全选</div>
+    <div class="favourablebtn-btn">删除</div>
+</div>
+<!--[integral]-->
+<div class="integral-top">
+    <div class="integral-num">500积分</div>
+    <div class="integral-detail">
+        <div class="" data-find="detail">查看明细</div>
+    </div>
+</div>
+<div class="integral-bottom">
+    <div class="integral-bottom-line">说明:</div>
+    <div class="integral-bottom-line">积分获取方式:购物、评价、活动奖品等</div>
+    <div class="integral-bottom-line">积分使用方式:折现、参与活动</div>
+</div>
+<!--[datalist-integraldetail]-->
+<div class="datalist-integraldetail-con">
+    <%for(var i in data){%>
+    <div class="datalist-integraldetail-item">
+        <div class="datalist-integraldetail-item-left">
+            <div class="datalist-integraldetail-item-left-aciotn"><%=data[i].action;%></div>
+            <div class="datalist-integraldetail-item-left-time"><%=data[i].time;%></div>
+        </div>
+        <div class="datalist-integraldetail-item-right">
+            <div class="datalist-integraldetail-item-right-num"><%=data[i].integral;%></div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<!--[datalist-message]-->
+<div class="datalist-message-con">
+    <%for(var i in data){%>
+    <div class="datalist-message-item">
+        <div class="datalist-message-item-title"><%=data[i].title;%></div>
+        <div class="datalist-message-item-time"><%=data[i].time;%></div>
+        <div class="datalist-message-item-content"><%=data[i].content;%></div>
+    </div>
+    <%}%>
+</div>
+<!--[userinfo]-->
+<div class="userinfo-username">
+    <div class="userinfo-username-left">用户名</div>
+    <div class="userinfo-username-right">xxxxxx</div>
+</div>
+<div class="userinfo-sex">
+    <div class="userinfo-sex-line">
+        <div class="userinfo-sex-line-left">男</div>
+        <div class="userinfo-sex-line-right check">
+            <i class="fa fa-circle-thin"></i>
+            <i class="fa fa-check-circle"></i>
+        </div>
+    </div>
+    <div class="userinfo-sex-line">
+        <div class="userinfo-sex-line-left">女</div>
+        <div class="userinfo-sex-line-right">
+            <i class="fa fa-circle-thin"></i>
+            <i class="fa fa-check-circle"></i>
+        </div>
+    </div>
+    <div class="userinfo-sex-line">
+        <div class="userinfo-sex-line-left">保密</div>
+        <div class="userinfo-sex-line-right">
+            <i class="fa fa-circle-thin"></i>
+            <i class="fa fa-check-circle"></i>
+        </div>
+    </div>
+</div>
+<div class="userinfo-date">
+    <div class="userinfo-date-left">生日</div>
+    <div class="userinfo-date-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="userinfo-password" data-find="editpassword">
+    <div class="userinfo-password-left">登陆密码</div>
+    <div class="userinfo-password-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="userinfo-address" data-find="address">
+    <div class="userinfo-address-left">地址管理</div>
+    <div class="userinfo-address-right">
+        <i class="fa fa-angle-right"></i>
+    </div>
+</div>
+<div class="userinfo-submit">保存</div>
+<!--[password]-->
+<div class="password-form">
+    <!--[<%=module(option.formType);%>]-->
+    <@module type="{{option.formType}}"/>
+</div>
+<div class="password-submit">保存</div>
+<!--[editaddress]-->
+<div class="editaddress-form">
+    <@module type="{{option.formType}}"/>
+</div>
+<div class="editaddress-submit">保存</div>
+<!--[bill]-->
+<div class="bill-title">发票内容</div>
+<div class="bill-line">
+    <div class="bill-line-left">纸质发票</div>
+    <div class="bill-line-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<div class="bill-title">发票抬头</div>
+<div class="bill-input">
+    <input type="text" placeholder="个人/公司名"/>
+</div>
+<div class="bill-title">发票内容</div>
+<div class="bill-line">
+    <div class="bill-line-left">明细</div>
+    <div class="bill-line-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<div class="bill-line">
+    <div class="bill-line-left">耗材</div>
+    <div class="bill-line-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<div class="bill-line">
+    <div class="bill-line-left">办公用品</div>
+    <div class="bill-line-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<div class="bill-line">
+    <div class="bill-line-left">电脑配件</div>
+    <div class="bill-line-right">
+        <i class="fa fa-circle-thin"></i>
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
+<!--[express]-->
+<%if(data.length>0){%>
+<div class="express-left">
+    <div class="express-left-a"></div>
+</div>
+<div class="express-right">
+    <%for(var i in data){%>
+    <%var t=false;if(i/1===data.length-1){t=true;}%>
+    <div class="express-right-item<%=t===true?' end':'';%>">
+        <div class="express-right-item-dot">
+            <%if(i==='0'){%>
+            <div class="express-right-item-dot-a big"></div>
+            <%}else{%>
+            <div class="express-right-item-dot-a"></div>
+            <%}%>
+        </div>
+        <div class="express-right-item-content">
+            <div class="express-right-item-content-time"><%=data[i].time;%></div>
+            <div class="express-right-item-content-desc"><%=data[i].desc;%></div>
+        </div>
+    </div>
+    <%}%>
+</div>
+<%}else{%>
+<div class="express-nodata">暂时没有快递信息</div>
+<%}%>

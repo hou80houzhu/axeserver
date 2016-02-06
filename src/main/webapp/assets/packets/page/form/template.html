@@ -1,0 +1,57 @@
+<!--imageupload-->
+<div class="imageupload-desc">选择一个图片</div>
+<input type="file" data-bind="change:input"/>
+<div class="loadingbar">
+    <div class="loadingbar-color"></div>
+</div>
+<!--text-->
+<%if(data.label&&data.label!==''){%>
+<div class='label-block'><%=data.label;%></div>
+<%}%>
+<input data-find='input' data-bind='keyup:keyup' type='text'>
+<%if(data.desc&&data.desc!==''){%>
+<div class='<%=data.isblock?'block':'inline';%>'><%=data.desc;%></div>
+<%}%>
+<!--checkboxgroup-->
+<div class='form-label'><%=data.label;%></div>
+<%for(var i in data.checkboxs){%>
+<div class='checkbox'>
+    <div class='checkbox-btn'>
+        <input type='checkbox' value='<%=data.checkboxs[i].value;%>'/>
+    </div>
+    <div class='checkbox-text'><%=data.checkboxs[i].key;%></div></div>
+<%}%>
+</div>
+<!--radiogroup-->
+<div class='label'><%=data.label;%></div>
+<%var dot = Math.round(Math.random(1) * 1000000000);%>
+<%for(var i in data.radios){%>
+<label class='radio'>
+    <div class='radio-btn'>
+        <input type='radio'<%=((data.radios[i].value === data.value? ' checked=\"checked\"' : '') + '  name=' + dot);%>>
+    </div>
+    <div class='radio-text'><%=data.radios[i].key;%></div>
+</label>
+<%}%>
+<!--select-->
+<%if(data.label!==''){%>
+<div class='label'><%=data.label;%></div>
+<%}%>
+<select data-bind="change:select" data-find="select">
+    <%for(var i in data.defaults){%>
+    <option value='<%=data.defaults[i].value;%>'<%=(data.defaults[i].value===data.value?' selected=\"selected\"':'');%>><%=data.defaults[i].key;%></option>
+    <%}%>
+    <%for(var i in data.remoteData){%>
+    <option value='<%=data.remoteData[i].value;%>'<%=(data.remoteData[i].value===data.value?' selected=\"selected\"':'');%>><%=data.remoteData[i].key;%></option>
+    <%}%>
+</select>
+<!--treelite-->
+<div class='xhead'>
+    <div class='xcurrent'>
+        <i class='fa fa-refresh fa-spin'></i>
+    </div>
+    <div class='xtoggle' data-bind='click:xtoggle'>
+        <i class='fa fa-angle-double-down' title='全部展开'></i>
+        <i class='fa fa-angle-double-up' title='全部收起'></i>
+    </div>
+</div><div class='xcon'></div>

@@ -1,0 +1,123 @@
+{
+        "MeshFile": "",
+        "ResultFile Prefix": "",
+        "Unit":"",
+        "Material": [{
+        "Number of Material":"",
+                "Material Property":""}
+        ],
+        "Frequency":[{
+        "Frequency Number":"",
+                "Start Frequency":"",
+                "End Frequency":""}
+        ],
+        "Excitation Type":"",
+        "Plane Wave":[{
+        "Scattering Type":"",
+                "Bistatic Scattering":[{
+                "Incident Direction":[{
+                "Theta":"",
+                        "Phi":""}
+                ],
+                        "Polarization":[{
+                        "Theta":"",
+                                "Phi":""}
+                        ],
+                        "Orthogonal Polarization Active":""}
+                ],
+                "Monostatic Scattering":[{
+                "Theta":[{
+                "Start Value":"",
+                        "End Value":"",
+                        "Step Value":""}
+                ],
+                        "Phi":[{
+                        "Start Value":"",
+                                "End Value":"",
+                                "Step Value":""}
+                        ],
+                        "Polarization Type":""}
+                ]}
+        ],
+        "Feed": [{
+        "Number of Feeds": "",
+                "Feed Type": "",
+                "Voltage Magnitude": "",
+                "Voltage Phase": "",
+                "Feed Port Number": "",
+                "Port Width": "",
+                "Half of Dipole Arm's Length": "",
+                "Vector": [{
+                "Direction Unit Vector": "",
+                        "Local Original Location": "",
+                        "Local x Direction Vector": "",
+                        "Local y Direction Vector": ""}
+                ]}
+        ],
+        "Lump Load": [{
+        "Number of Loads": "",
+                "Attached Feed": "",
+                "Resistance R": "",
+                "Inductance L": "",
+                "Capacitance C": "",
+                "Location": "",
+                "Current Direction": ""}
+        ],
+        "Matrix Settings": [{
+        "Impedance Element Calculation Type": "",
+                "Minimum Box Size in MLFMA": "",
+                "Average Edge Length": "",
+                "Integral Type": "",
+                "Combine Ratio": "",
+                "Integral Rule for Field": "",
+                "Integral Rule for Source": ""}
+        ],
+        "Solving Matrix Equations": [{
+        "Solving Method": "",
+                "Tolerance": "",
+                "Maximum Steps": "",
+                "Preconditioner Type": ""}
+        ],
+        "Computation Resources": [{
+        "CPU Cores": ""}
+        ],
+        "Current Distribution Computation": [{
+        "Computation Type": ""}
+        ],
+        "Near Field Computation": [{
+        "Computation Type": "",
+                "Radius": [{
+                "Start Value": "",
+                        "End Value": "",
+                        "Number": ""}
+                ],
+                "Theta": [{
+                "Start Value": "",
+                        "End Value": "",
+                        "Number": ""}
+                ],
+                "Phi": [{
+                "Start Value": "",
+                        "End Value": "",
+                        "Number": ""}
+                ]}
+        ],
+        "Far Field Computation": [{
+        "Computation Type": "",
+                "Theta": [{
+                "Start Value": "",
+                        "End Value": "",
+                        "Step Value": ""}
+                ],
+                "Phi": [{
+                "Start Value": "",
+                        "End Value": "",
+                        "Step Value": ""}
+                ]}
+        ],
+        "EPA Configuration": [{
+        "Active": "",
+                "Number of EPA Surfaces": "",
+                "Filename": ""}
+        ]
+}

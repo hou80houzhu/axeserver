@@ -1,0 +1,29 @@
+{
+    "code": "1",
+    "data":[
+        {"url":"404","option":"mart.option.nopage.page","name":"404"},
+        {"url":"index","option":"mart.option.index.page","name":"index"},
+        {"url":"search","option":"mart.option.search.page","name":"search"},
+        {"url":"goods","option":"mart.option.goods.page","name":"goods"},
+        {"url":"login","option":"mart.option.login.page","name":"login"},
+        {"url":"regist","option":"mart.option.regist.page","name":"regist"},
+        {"url":"comment","option":"mart.option.comment.page","name":"comment"},
+        {"url":"user","option":"mart.option.user.page","name":"user"},
+        {"url":"goodsdetail","option":"mart.option.goodsdetail.page","name":"goodsdetail"},
+        {"url":"orderlist","option":"mart.option.orderlist.page","name":"orderlist"},
+        {"url":"orderdetail","option":"mart.option.orderdetail.page","name":"orderdetail"},
+        {"url":"worderdetail","option":"mart.option.worderdetail.page","name":"worderdetail"},
+        {"url":"shoppingcar","option":"mart.option.shoppingcar.page","name":"shoppingcar"},
+        {"url":"favourable","option":"mart.option.favourable.page","name":"favourable"},
+        {"url":"addresslist","option":"mart.option.addresslist.page","name":"addresslist"},
+        {"url":"integraldetail","option":"mart.option.integraldetail.page","name":"integraldetail"},
+        {"url":"message","option":"mart.option.message.page","name":"message"},
+        {"url":"userinfo","option":"mart.option.userinfo.page","name":"userinfo"},
+        {"url":"password","option":"mart.option.password.page","name":"password"},
+        {"url":"editaddress","option":"mart.option.editaddress.page","name":"editaddress"},
+        {"url":"selectfavourable","option":"mart.option.selectfavourable.page","name":"selectfavourable"},
+        {"url":"bill","option":"mart.option.bill.page","name":"bill"},
+        {"url":"express","option":"mart.option.express.page","name":"express"},
+        {"url":"market/tuijian","option":"mart.option.tuijian.page","name":"tuijian"}
+    ]
+}

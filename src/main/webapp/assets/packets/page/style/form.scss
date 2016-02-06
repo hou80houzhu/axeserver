@@ -1,0 +1,105 @@
+@import "lib.scss";
+@import "reset.scss";
+
+%input{
+    border:0;
+    border-bottom: 2px solid #D7D7D7;
+    line-height:30px;
+    outline: none;
+    width:100%;
+    padding:0;
+    background:transparent;
+    font-size:15px;
+    @include boxSizing();
+    @include transition();
+    &:focus{
+        border-bottom: 2px solid #0A8CF3;
+    }
+}
+%input-msg{
+    @include flexBox();
+    font-size:12px;
+    .input-msg-text{
+        line-height:20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include flexItem(1);
+    }
+    .input-msg-icon{
+        width:20px;
+        line-height:20px;
+        text-align: center;
+    }
+}
+%input-label{
+    line-height:15px;
+    font-size:12px;
+    color:#AEA9B5;
+    font-weight:500;
+}
+
+input[type='text'],
+input[type='password'],
+textarea{
+    @extend %input;
+}
+textarea{
+    min-height:80px;
+    line-height:20px;
+}
+select{
+    height:30px;
+    @extend %input;
+}
+.input{
+    padding:10px;
+    display:block;
+    @include boxSizing();
+    .input-msg{
+        @extend %input-msg;
+    }
+    .input-label{
+        @extend %input-label;
+    }
+}
+.input-multi{
+    @include boxSizing();
+    padding:10px 0 10px 0;
+    >.input-label{
+        @extend %input-label;
+        padding:0 10px 0 10px;
+    }
+    >.input-multicon{
+        @include flexBox();
+        >.input-icon{
+            width:35px;
+            line-height:35px;
+            text-align: center;
+        }
+        >.input-box{
+            @include flexItem(1);
+            >input[type='text'],
+            >input[type='password']{
+                @include flexItem(1);
+            }
+            >.input-msg{
+                @extend %input-msg;
+            }
+        }
+    }
+    >.input-icon{
+        width:35px;
+        line-height:35px;
+        text-align: center;
+    }
+    >.input-box{
+        @include flexItem(1);
+        >input[type='text'],
+        >input[type='password']{
+            @include flexItem(1);
+        }
+        >.input-msg{
+            @extend %input-msg;
+        }
+    }
+}

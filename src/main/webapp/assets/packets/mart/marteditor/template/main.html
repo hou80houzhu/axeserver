@@ -1,0 +1,92 @@
+<!--[main]-->
+<div class="main-ltopbar">
+    <div class="main-btn" data-bind="click:open"><i class="fa fa-folder-open"></i></div>
+    <div class="main-btn" data-bind="click:plus"><i class="fa fa-plus"></i></div>
+    <div class="main-btn" data-bind="click:refresh"><i class="fa fa-refresh"></i></div>
+</div>
+<div class="main-left">
+    <iframe src="<%=option.url;%>"></iframe>
+    <div class="main-left-box" data-find="box">
+        <div class="main-left-box-title">
+            <div class="main-left-box-title-a">Open Page</div>
+            <div class="main-left-box-title-b" data-bind="click:closebox"><i class="fa fa-remove"></i></div>
+        </div>
+        <div class="main-left-box-content" data-find="boxcontent"></div>
+    </div>
+</div>
+<div class="main-toggle" data-bind="click:toggle">
+    <div class="main-toggle-btn"><i class="fa fa-angle-left"></i></div>
+</div>
+<div class="main-rtopbar">
+    <div class="main-rtopbar-title" data-find="modulename"></div>
+    <div class="main-rtopbar-btns">
+        <div class="main-btn" data-bind="click:savemodule"><i class="fa fa-check"></i></div>
+    </div>
+</div>
+<div class="main-right">
+    <div class="main-right-form">
+        <div class="main-right-form-title">Option</div>
+        <div class="main-right-form-content" data-find="form"></div>
+    </div>
+    <div class="main-right-code">
+        <div class="main-right-code-title">Module Override Function</div>
+        <div class="main-right-code-content" data-find="code"></div>
+    </div>
+</div>
+<div class="main-top">
+    <div class="main-top-logo"></div>
+    <div class="main-top-btns">
+        <div class="main-top-btns-btn" data-bind='click:openaddbox'><i class='fa fa-plus'></i></div>
+    </div>
+</div>
+<div class="main-modulemask">
+    <div class="main-modulemask-title">
+        <div class="main-modulemask-title-desc" data-find="masktitle"></div>
+        <div class="main-modulemask-title-btns">
+            <div class="main-modulemask-title-btns-btn" data-bind="click:savepagecode"><i class="fa fa-check"></i></div>
+        </div>
+    </div>
+    <div class="main-modulemask-content">
+        <div class="main-modulemask-desc">没有可编辑项</div>
+    </div>
+</div>
+<div class="main-pagecode">
+    <div class="main-pagecode-title" data-bind="click:codeclose">
+        <div class="main-pagecode-title-desc">Page Code</div>
+        <div class="main-pagecode-title-btns">
+            <div class="main-btn"><i class="fa fa-chevron-down"></i></div>
+        </div>
+    </div>
+    <div class="main-pagecode-content" data-find="pagecode"></div>
+</div>
+<div class="main-addbox" data-find='addbox'>
+    <div class="main-addbox-title">Create Page</div>
+    <div class="main-addbox-content"></div>
+    <div class="main-addbox-btns">
+        <div class="main-addbox-btns-btn" data-bind='click:addboxclose'><i class='fa fa-times'></i></div>
+        <div class="main-addbox-btns-btn" data-bind='click:addboxok'><i class='fa fa-check'></i></div>
+    </div>
+</div>
+<div class="main-mask" data-find="mask"></div>
+<!--[pagelist]-->
+<%for(var i in data){%>
+<div class="pagelist-item">
+    <div class="pagelist-item-con" data-bind="click:opennewpage" href="<%=data[i].url;%>">
+        <div class="pagelist-item-con-icon">
+            <i class="fa fa-file-text-o"></i>
+        </div>
+        <div class="pagelist-item-con-desc"><%=data[i].name;%></div>
+    </div>
+</div>
+<%}%>
+<!--[modulelist]-->
+<%for(var i in data){%>
+<div class="modulelist-item">
+    <div class="modulelist-item-con" data-bind="click:addmodule" module="<%=i;%>">
+        <div class="modulelist-item-con-icon">
+            <i class="fa fa-file-text-o"></i>
+        </div>
+        <div class="modulelist-item-con-desc"><%=data[i].name;%></div>
+    </div>
+</div>
+<%}%>

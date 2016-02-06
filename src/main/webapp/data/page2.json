@@ -1,0 +1,32 @@
+{
+    "code": "1",
+    "data":[
+        {
+            "name":"A20030",
+            "state":"在岗",
+            "num1":20,
+            "num2":10,
+            "num3":10,
+            "tasktype":"汇兑业务",
+            "totaltime":30
+        },
+        {
+            "name":"A20030",
+            "state":"在岗",
+            "num1":20,
+            "num2":10,
+            "num3":10,
+            "tasktype":"汇兑业务",
+            "totaltime":30
+        },
+        {
+            "name":"A20030",
+            "state":"在岗",
+            "num1":20,
+            "num2":10,
+            "num3":10,
+            "tasktype":"汇兑业务",
+            "totaltime":30
+        }
+    ]
+}
