@@ -1,10 +1,10 @@
 package com.ttsx.site.service.serviceImp;
 
-import com.brooder.mvc.annotation.Dao;
-import com.brooder.mvc.annotation.Service;
-import com.brooder.mvc.annotation.Transation;
-import com.brooder.mvc.data.dao.MysqlDao;
-import com.brooder.mvc.data.dao.MysqlDao.PageInfo;
+import com.packet.mvc.annotation.Dao;
+import com.packet.mvc.annotation.Service;
+import com.packet.mvc.annotation.Transation;
+import com.packet.mvc.data.dao.MysqlDao;
+import com.packet.mvc.data.dao.MysqlDao.PageInfo;
 import com.ttsx.site.models.News;
 import com.ttsx.site.service.NewsService;
 import java.util.HashMap;

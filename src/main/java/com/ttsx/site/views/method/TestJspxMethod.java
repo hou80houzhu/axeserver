@@ -1,7 +1,7 @@
 package com.ttsx.site.views.method;
 
-import com.brooder.mvc.view.page.annotation.JspxMethod;
-import com.brooder.mvc.view.page.base.JspxMethodBase;
+import com.packet.mvc.view.page.annotation.JspxMethod;
+import com.packet.mvc.view.page.base.JspxMethodBase;
 import freemarker.template.TemplateModelException;
 import java.util.List;
 

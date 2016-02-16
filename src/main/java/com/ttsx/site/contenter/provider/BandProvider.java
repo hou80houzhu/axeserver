@@ -1,8 +1,8 @@
 package com.ttsx.site.contenter.provider;
 
-import com.brooder.contenter.template.annotation.ContenterProvider;
-import com.brooder.mvc.annotation.ControllerService;
-import com.brooder.util.base.reflect.ObjectSnooper;
+import com.packet.contenter.template.annotation.ContenterProvider;
+import com.packet.mvc.annotation.ControllerService;
+import com.packet.util.base.reflect.ObjectSnooper;
 import com.ttsx.site.contenter.BrooderProvider;
 import com.ttsx.site.models.Brand;
 import com.ttsx.site.service.BrandsService;

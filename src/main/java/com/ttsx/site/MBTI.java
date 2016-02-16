@@ -1,7 +1,7 @@
 package com.ttsx.site;
 
-import com.brooder.util.jsonx.JsonEachArray;
-import com.brooder.util.jsonx.Jsonx;
+import com.packet.util.jsonx.JsonEachArray;
+import com.packet.util.jsonx.Jsonx;
 import java.util.HashMap;
 
 public class MBTI {

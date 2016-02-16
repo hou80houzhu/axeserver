@@ -1,11 +1,11 @@
 package com.ttsx.site.controller;
 
-import com.brooder.Result;
-import com.brooder.contenter.ContenterAdapter;
-import com.brooder.mvc.annotation.Action;
-import com.brooder.mvc.annotation.Controller;
-import com.brooder.mvc.controller.BaseController;
-import com.brooder.mvc.view.View;
+import com.packet.Result;
+import com.packet.contenter.ContenterAdapter;
+import com.packet.mvc.annotation.Action;
+import com.packet.mvc.annotation.Controller;
+import com.packet.mvc.controller.BaseController;
+import com.packet.mvc.view.View;
 
 @Controller(basePath = "/test")
 public class TestController extends BaseController {

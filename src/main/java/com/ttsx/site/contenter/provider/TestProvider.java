@@ -1,7 +1,7 @@
 package com.ttsx.site.contenter.provider;
 
-import com.brooder.contenter.template.annotation.ContenterProvider;
-import com.brooder.mvc.annotation.ControllerService;
+import com.packet.contenter.template.annotation.ContenterProvider;
+import com.packet.mvc.annotation.ControllerService;
 import com.ttsx.site.contenter.BrooderProvider;
 import com.ttsx.site.service.UserService;
 import java.util.HashMap;

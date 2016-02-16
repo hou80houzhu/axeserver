@@ -1,6 +1,6 @@
 package com.ttsx.site.views.provider;
 
-import com.brooder.mvc.view.page.annotation.JspxProvider;
+import com.packet.mvc.view.page.annotation.JspxProvider;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

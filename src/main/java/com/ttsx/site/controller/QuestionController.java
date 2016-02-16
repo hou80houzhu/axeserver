@@ -1,13 +1,13 @@
 package com.ttsx.site.controller;
 
-import com.brooder.Result;
-import com.brooder.jmail.Jmail;
-import com.brooder.jmail.data.JmailInfo;
-import com.brooder.mvc.annotation.Action;
-import com.brooder.mvc.annotation.Controller;
-import com.brooder.mvc.controller.BaseController;
-import com.brooder.mvc.view.View;
-import com.brooder.util.jsonx.Jsonx;
+import com.packet.Result;
+import com.packet.jmail.Jmail;
+import com.packet.jmail.data.JmailInfo;
+import com.packet.mvc.annotation.Action;
+import com.packet.mvc.annotation.Controller;
+import com.packet.mvc.controller.BaseController;
+import com.packet.mvc.view.View;
+import com.packet.util.jsonx.Jsonx;
 import com.ttsx.site.MBTI;
 import com.ttsx.site.question.QuestionOption;
 import java.io.File;

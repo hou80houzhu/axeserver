@@ -1,7 +1,7 @@
 package com.ttsx.site.contenter.method;
 
-import com.brooder.contenter.template.annotation.ContenterMethod;
-import com.brooder.contenter.template.macro.base.ContentMethodBase;
+import com.packet.contenter.template.annotation.ContenterMethod;
+import com.packet.contenter.template.macro.base.ContentMethodBase;
 import freemarker.template.TemplateModelException;
 import java.util.List;
 

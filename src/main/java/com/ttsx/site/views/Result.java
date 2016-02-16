@@ -1,6 +1,6 @@
 package com.ttsx.site.views;
 
-import com.brooder.mvc.view.JsonView;
+import com.packet.mvc.view.JsonView;
 import java.util.HashMap;
 import java.util.Map;
 

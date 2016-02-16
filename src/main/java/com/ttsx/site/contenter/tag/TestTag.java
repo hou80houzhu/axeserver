@@ -1,7 +1,7 @@
 package com.ttsx.site.contenter.tag;
 
-import com.brooder.contenter.template.annotation.ContenterTag;
-import com.brooder.contenter.template.macro.base.ContentMacroTagBase;
+import com.packet.contenter.template.annotation.ContenterTag;
+import com.packet.contenter.template.macro.base.ContentMacroTagBase;
 import java.util.HashMap;
 
 @ContenterTag(name = "testTag")

@@ -1,6 +1,6 @@
 package com.ttsx.site.service;
 
-import com.brooder.mvc.data.dao.MysqlDao.PageInfo;
+import com.packet.mvc.data.dao.MysqlDao.PageInfo;
 import com.ttsx.site.models.News;
 import java.util.HashMap;
 

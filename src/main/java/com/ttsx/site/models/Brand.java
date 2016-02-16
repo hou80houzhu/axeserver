@@ -1,7 +1,7 @@
 package com.ttsx.site.models;
 
-import com.brooder.mvc.annotation.Id;
-import com.brooder.mvc.annotation.Model;
+import com.packet.mvc.annotation.Id;
+import com.packet.mvc.annotation.Model;
 
 @Model(name = "brand")
 public class Brand {

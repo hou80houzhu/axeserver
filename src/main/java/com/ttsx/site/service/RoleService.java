@@ -1,7 +1,7 @@
 package com.ttsx.site.service;
 
-import com.brooder.mvc.data.dao.MysqlDao.PageInfo;
-import com.brooder.mvc.data.dao.MysqlDao.RowList;
+import com.packet.mvc.data.dao.MysqlDao.PageInfo;
+import com.packet.mvc.data.dao.MysqlDao.RowList;
 import com.ttsx.site.models.Role;
 
 public interface RoleService {
